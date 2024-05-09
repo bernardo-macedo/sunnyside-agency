@@ -2,12 +2,16 @@
 const navMenu = document.querySelector("#nav-menu");
 //Mobile Burger Icon and Close
 const mobileOpenMenuIcon = document.querySelector("#menu-open-icon");
-//const mobileCloseMenuIcon = document.querySelector("#menu-close-icon");
+const mobileCloseMenuIcon = document.querySelector("#menu-close-icon");
 
 // Function to hide and show mobile menu
 function mobileMenuHandler() {
   if (navMenu.classList.contains("scale-0")) {
     navMenu.classList.replace("scale-0", "scale-100");
+    mobileOpenMenuIcon.classList.toggle("hidden");
+    console.log("ayyy");
+    mobileCloseMenuIcon.classList.toggle("hidden");
+    mobileCloseMenuIcon.classList.replace("scale-0", "scale-100");
   } else {
     navMenu.classList.replace("scale-100", "scale-0");
   }

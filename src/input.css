@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.block-behind-link:hover span {
+  opacity: 0.8;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 30px 30px;
+  border-color: transparent transparent #fff transparent;
+  transform: rotate(0deg);
+}
